@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      /* box-sizing: border-box; */
+    }
+    main {
+      height: 100vh;
+      background-color: pink;
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+    }
+    footer {
+      background-color: green;
+      height: 60px;
+      line-height: 60px;
+      width: 100vw;
+      position: fixed;
+      bottom: 0;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+  </style>
+</head>
+<body>
+  <!-- 安全区域 safe-area 分别有上下左右四个方向，分别是safe-area-inset-top safe-area-inset-bottom safe-area-inset-left safe-area-inset-right
+  -->
+  <main>
+    main main main
+  </main>
+  <footer>
+    footer
+  </footer>
+</body>
+</html>
